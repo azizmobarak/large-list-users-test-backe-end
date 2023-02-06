@@ -7,7 +7,7 @@ export interface Users {
 }
 
 const numberOfItemsByPage: number = 100;
-const totalUsers: number = 25_0000;
+const totalUsers: number = 250_0000;
 
 const getUsersList = (req: any, res: any) => {
     try {
