@@ -3,6 +3,6 @@ const router = express.Router();
 const getUsersList = require('./service/usersListByPage');
 
 
-router.route('/:page').get(getUsersList);
+router.route('/').get(getUsersList);
 
 module.exports = router;
