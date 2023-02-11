@@ -2,11 +2,12 @@ import { faker } from '@faker-js/faker';
 import { ResponseResult, responseBuilder } from './apiResponseHelper';
 
 export interface Users {
+    id: number,
     name: string,
     image: string,
 }
 
-const totalUsers: number = 25_000;
+const totalUsers: number = 200_000;
 
 const getUsersList = (req: any, res: any) => {
     try {
@@ -28,6 +29,7 @@ function generateUsers(): Users[] {
     const generatedUsers: Users[] = [];
     for (let num: number = 0; num < totalUsers; num++) {
         generatedUsers.push({
+            id: num,
             name: faker.name.fullName(),
             image: faker.image.avatar(),
         })
