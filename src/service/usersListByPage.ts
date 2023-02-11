@@ -7,7 +7,7 @@ export interface Users {
     image: string,
 }
 
-const totalUsers: number = 100_000;
+const totalUsers: number = 50_000;
 
 const getUsersList = (req: any, res: any) => {
     try {
